@@ -32,4 +32,4 @@ def parse_input():
     if not (op=="+" or op=="-" or op=="*" or op=="/" or op=="//"or op=="**"):
         return False
     calculator(n1,n2,op)
-parse_input()
+#parse_input()
