@@ -1,7 +1,7 @@
 
 import time
 # Decorator:: calculate_time
-def calculate_time(self):
+def calculate_time():
     begin = time.time()
     #time.sleep(2)
     end = time.time()
