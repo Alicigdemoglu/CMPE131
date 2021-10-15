@@ -9,10 +9,16 @@ def calculator(number1,number2,operator):
         #multiply two numbers
         return(number1 * number2)
     elif operator == "/":
-        #divide two numbers
-        return(number1 / number2)
+         #divide two numbers
+        if number2 == 0:
+            return False
+        else:
+            return(number1 / number2)
     elif operator == "//":
-        return(number1 // number2)
+        if number2 == 0:
+            return False
+        else:
+            return(number1 // number2)
     elif operator == "**":
         return(number1 ** number2)
     else:
@@ -26,3 +32,4 @@ def parse_input():
     if not (op=="+" or op=="-" or op=="*" or op=="/" or op=="//"or op=="**"):
         return False
     calculator(n1,n2,op)
+parse_input()
